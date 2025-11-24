@@ -1,0 +1,14 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const MoviesFavoriteManager_1 = require("./MoviesFavoriteManager");
+const BooksFavoriteManager_1 = require("./BooksFavoriteManager");
+const filmes = new MoviesFavoriteManager_1.MoviesFavoriteManager();
+filmes.addFavorite("Velozes e Furiosos");
+filmes.addFavorite("Guerra Mundial Z");
+filmes.addFavorite("Sherek");
+const livros = new BooksFavoriteManager_1.BooksFavoriteManager();
+livros.addFavorite("A paciente silenciosa");
+livros.addFavorite("O homem mais rico da babilônia");
+livros.addFavorite("A paciente silenciosa");
+console.log("Filmes:", filmes.getFavorites());
+console.log("Livros:", livros.getFavorites());
